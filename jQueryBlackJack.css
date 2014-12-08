@@ -1,0 +1,185 @@
+/* CSS declarations go here */
+@font-face {
+	font-family: Gun;
+	src: url("/fonts/gun.ttf");
+}
+
+body {
+	overflow: hidden;
+}
+
+h1 {
+	text-align: center;
+	font-size: 55px;
+	font-family: Gun;
+}
+
+.ddd, .aaa {
+	display: inline-block;
+	background-color: #F7F7F7;
+	height: 120px;
+	width: 80px;
+	border-style: outset;
+	border-color: red;
+	border-radius: 10px;
+	margin-top: 1%;
+}
+
+.ddd {
+	margin-left: 40%;
+}
+
+.fff, .eee {
+	display: inline-block;
+	background-color: #F7F7F7;
+	height: 120px;
+	width: 80px;
+	border-style: outset;
+	border-color: red;
+	border-radius: 10px;
+	margin-top: 30%;
+}
+
+.fff {
+	margin-left: 40%;
+}
+
+.nnn {
+	
+	position: absolute;
+	margin-left: 45%;
+	margin-top: -9.5%;
+	display: block;
+	background-color: #F7F7F7;
+	height: 120px;
+	width: 80px;
+	border-style: outset;
+	border-color: red;
+	border-radius: 10px;
+	 
+}
+
+.bbb {
+	
+	position: absolute;
+	margin-left: 48%;
+	margin-top: -6.5%;
+	display: block;
+	background-color: #F7F7F7;
+	height: 120px;
+	width: 80px;
+	border-style: outset;
+	border-color: red;
+	border-radius: 10px;
+	 
+}
+
+.jjj {
+	
+	position: absolute;
+	margin-left: 51.5%;
+	margin-top: -3.5%;
+	display: block;
+	background-color: #F7F7F7;
+	height: 120px;
+	width: 80px;
+	border-style: outset;
+	border-color: red;
+	border-radius: 10px;
+	 
+}
+
+.kkk {
+	position: absolute;
+	margin-left: 54.5%;
+	margin-top: -0.3%;
+	display: block;
+	background-color: #F7F7F7;
+	height: 120px;
+	width: 80px;
+	border-style: outset;
+	border-color: red;
+	border-radius: 10px;
+}
+
+.baobab{
+	margin-bottom: -20%;
+	margin-left: 47%;
+}
+
+.newCard {
+	margin-bottom: -20%;
+	margin-left: 43.60%;
+}
+
+.newnewCard{
+	margin-bottom: -20%;
+	margin-left: 47%;
+}
+
+.newnewnewCard {
+	margin-bottom: -20%;
+	margin-left: 43.60%;
+}
+
+.omgCard {
+	margin-bottom: -20%;
+	margin-left: 48%;
+}
+
+.scoreAsPlayer {
+	border-color: blue;
+	font-size: 16px;
+	text-align: center;
+	height: 35px;
+	width: 35px;
+	margin-top: -15%;
+	margin-right: 70%;
+	margin-left: 30.5%;
+	display: block;
+	background-color: #99C4C7;
+	border-radius: 30px;
+	border-style: outset;
+}
+
+.scoreAsDealer {
+	border-color: blue;
+	font-size: 16px;
+	position: absolute;
+	margin-left: 25%;
+	margin-right: 75%;
+	margin-top: 8%;
+	text-align: center;
+	height: 35px;
+	width: 35px;
+	display: block;
+	background-color: #99C4C7;
+	border-radius: 30px;
+	border-style: outset;
+}
+
+.container {
+	height: 575px;
+	border-radius: 400px;
+	background-color: #191F1D;
+}
+
+#wess {
+	margin-top: 4%;
+	margin-left: 5%;
+	height: 500px;
+	width: 850px;
+	border-radius: 400px;
+	background-color: green;
+}
+
+.fff, .eee{
+	margin-top: 25%;
+}
+
+img {
+	display: block;
+	padding-top: 2%;
+	border-radius: 10px;
+}
+
