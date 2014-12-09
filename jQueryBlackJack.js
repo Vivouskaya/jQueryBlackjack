@@ -3,6 +3,7 @@ if (Meteor.isClient) {
           var score = 0;
           var scoreAsPlayer = 0;
           var scoreAsDealer = 0;
+          $('.stop').hide();
           $('.newCard').hide();
           $('.newnewCard').hide();
           $('.newnewnewCard').hide();
@@ -16,13 +17,17 @@ if (Meteor.isClient) {
           $('.ppp').hide();
 
           $('.baobab').click(function() {
-             
+              $('#yo').fadeOut();
+              $('#yoo').fadeOut();
+              $('#yooo').fadeOut();
+              $('#yoooo').fadeOut();
               var firstCard = Math.floor((Math.random() * (13-0) )+1);
-              $('.fff').text(firstCard);
+
+              $('.stop').fadeIn('slow')
               $('.baobab').fadeOut('slow');
               $('.newCard').fadeIn('slow');
               if (firstCard == 1){
-                 $('.fff').text("As");
+                 $('.fff').prepend('<img src="/img/a.png" />');
                  if (scoreAsPlayer + 11 > 21) {
                   scoreAsPlayer = scoreAsPlayer + 1;
                  }
@@ -33,71 +38,71 @@ if (Meteor.isClient) {
                  $('.scoreAsPlayer').text(scoreAsPlayer);
               }
               if (firstCard == 13){
-                 $('.fff').text("King");
+                 $('.fff').prepend('<img src="/img/k.png" />');
                  scoreAsPlayer = scoreAsPlayer + 10;
                  $('.scoreAsPlayer').text(scoreAsPlayer);
               }
               else if (firstCard == 12){
-                 $('.fff').text("Queen");
+                 $('.fff').prepend('<img src="/img/q.png" />');
                  scoreAsPlayer = scoreAsPlayer + 10;
                  $('.scoreAsPlayer').text(scoreAsPlayer);
               }
               else if (firstCard == 11){
-                 $('.fff').text("Jack");
+                 $('.fff').prepend('<img src="/img/j.png" />');
                  scoreAsPlayer = scoreAsPlayer + 10;
                  $('.scoreAsPlayer').text(scoreAsPlayer);
               }
               else if (firstCard == 10){
-                 $('.fff').text("Ten");
+                 $('.fff').prepend('<img src="/img/10.png" />');
                  scoreAsPlayer = scoreAsPlayer + 10;
                  $('.scoreAsPlayer').text(scoreAsPlayer);
               }
               else if (firstCard == 9){
-                 $('.fff').text("Neuf");
+                 $('.fff').prepend('<img src="/img/9.png" />');
                  scoreAsPlayer = scoreAsPlayer + 9;
                  $('.scoreAsPlayer').text(scoreAsPlayer);
               }
               else if (firstCard == 8){
-                 $('.fff').text("Eight");
+                 $('.fff').prepend('<img src="/img/8.png" />');
                  scoreAsPlayer = scoreAsPlayer + 8;
                  $('.scoreAsPlayer').text(scoreAsPlayer);
               }
               else if (firstCard == 7){
-                 $('.fff').text("Seven");
+                 $('.fff').prepend('<img src="/img/7.png" />');
                  scoreAsPlayer = scoreAsPlayer + 7;
                  $('.scoreAsPlayer').text(scoreAsPlayer);
               }
               else if (firstCard == 6){
-                 $('.fff').text("Six");
+                 $('.fff').prepend('<img src="/img/6.png" />');
                  scoreAsPlayer = scoreAsPlayer + 6;
                  $('.scoreAsPlayer').text(scoreAsPlayer);
               }
               else if (firstCard == 5){
-                 $('.fff').text("Five");
+                 $('.fff').prepend('<img src="/img/5.png" />');
                  scoreAsPlayer = scoreAsPlayer + 5;
                  $('.scoreAsPlayer').text(scoreAsPlayer);
               }
               else if (firstCard == 4){
-                 $('.fff').text("Four");
+                 $('.fff').prepend('<img src="/img/4.png" />');
                  scoreAsPlayer = scoreAsPlayer + 4;
                  $('.scoreAsPlayer').text(scoreAsPlayer);
               }
               else if (firstCard == 3){
-                 $('.fff').text("Three");
+                 $('.fff').prepend('<img src="/img/3.png" />');
                  scoreAsPlayer = scoreAsPlayer + 3;
                  $('.scoreAsPlayer').text(scoreAsPlayer);
               }
               else if (firstCard == 2){
-                 $('.fff').text("Two");
+                 $('.fff').prepend('<img src="/img/2.png" />');
                  scoreAsPlayer = scoreAsPlayer + 2;
                  $('.scoreAsPlayer').text(scoreAsPlayer);
               }
 
             var secondCard = Math.floor((Math.random() * (13-0)+1 ));
-              $('.eee').text(secondCard);
+              
 
               if (secondCard == 1){
-                 $('.eee').text("As");
+                 $('.eee').prepend('<img src="/img/a.png" />');
                  if (scoreAsPlayer + 11 > 21) {
                   scoreAsPlayer = scoreAsPlayer + 1;
                  }
@@ -107,62 +112,62 @@ if (Meteor.isClient) {
                  $('.scoreAsPlayer').text(scoreAsPlayer);
               }
               else if (secondCard == 13){
-                 $('.eee').text("King");
+                 $('.eee').prepend('<img src="/img/k.png" />');
                  scoreAsPlayer = scoreAsPlayer + 10;
                  $('.scoreAsPlayer').text(scoreAsPlayer);
               }
               else if (secondCard == 12){
-                 $('.eee').text("Queen");
+                 $('.eee').prepend('<img src="/img/q.png" />');
                  scoreAsPlayer = scoreAsPlayer + 10;
                  $('.scoreAsPlayer').text(scoreAsPlayer);
               }
               else if (secondCard == 11){
-                 $('.eee').text("Jack");
+                 $('.eee').prepend('<img src="/img/j.png" />');
                  scoreAsPlayer = scoreAsPlayer + 10;
                  $('.scoreAsPlayer').text(scoreAsPlayer);
               }
               else if (secondCard == 10){
-                 $('.eee').text("Ten");
+                 $('.eee').prepend('<img src="/img/10.png" />');
                  scoreAsPlayer = scoreAsPlayer + 10;
                  $('.scoreAsPlayer').text(scoreAsPlayer);
               }
               else if (secondCard == 9){
-                 $('.eee').text("Neuf");
+                 $('.eee').prepend('<img src="/img/9.png" />');
                  scoreAsPlayer = scoreAsPlayer +9;
                  $('.scoreAsPlayer').text(scoreAsPlayer);
               }
               else if (secondCard == 8){
-                 $('.eee').text("Eight");
+                 $('.eee').prepend('<img src="/img/8.png" />');
                  scoreAsPlayer = scoreAsPlayer + 8;
                  $('.scoreAsPlayer').text(scoreAsPlayer);
               }
               else if (secondCard == 7){
-                 $('.eee').text("Seven");
+                 $('.eee').prepend('<img src="/img/7.png" />');
                  scoreAsPlayer = scoreAsPlayer + 7;
                  $('.scoreAsPlayer').text(scoreAsPlayer);
               }
               else if (secondCard == 6){
-                 $('.eee').text("Six");
+                 $('.eee').prepend('<img src="/img/6.png" />');
                  scoreAsPlayer = scoreAsPlayer + 6;
                  $('.scoreAsPlayer').text(scoreAsPlayer);
               }
               else if (secondCard == 5){
-                 $('.eee').text("Five");
+                 $('.eee').prepend('<img src="/img/5.png" />');
                  scoreAsPlayer = scoreAsPlayer + 5;
                  $('.scoreAsPlayer').text(scoreAsPlayer);
               }
               else if (secondCard == 4){
-                 $('.eee').text("Four");
+                 $('.eee').prepend('<img src="/img/4.png" />');
                  scoreAsPlayer = scoreAsPlayer + 4;
                  $('.scoreAsPlayer').text(scoreAsPlayer);
               }
               else if (secondCard == 3){
-                 $('.eee').text("Three");
+                 $('.eee').prepend('<img src="/img/3.png" />');
                  scoreAsPlayer = scoreAsPlayer + 3;
                  $('.scoreAsPlayer').text(scoreAsPlayer);
               }
               else if (secondCard == 2){
-                 $('.eee').text("Two");
+                 $('.eee').prepend('<img src="/img/2.png" />');
                  scoreAsPlayer = scoreAsPlayer + 2;
                  $('.scoreAsPlayer').text(scoreAsPlayer);
               }
@@ -170,9 +175,9 @@ if (Meteor.isClient) {
 
             
               var firstDealerCard = Math.floor((Math.random() * (13-0) )+1);
-              $('.ddd').text(firstDealerCard);
+              
               if (firstDealerCard == 1){
-                 $('.ddd').text("As");
+                 $('.ddd').prepend('<img src="/img/a.png" />');
                  if (scoreAsDealer + 11 > 21) {
                   scoreAsDealer = scoreAsDealer + 1;
                  }
@@ -182,62 +187,62 @@ if (Meteor.isClient) {
                  $('.scoreAsDealer').text(scoreAsDealer);
               }
               if (firstDealerCard == 13){
-                 $('.ddd').text("King");
+                 $('.ddd').prepend('<img src="/img/k.png" />');
                  scoreAsDealer = scoreAsDealer + 10;
                  $('.scoreAsDealer').text(scoreAsDealer);
               }
               else if (firstDealerCard == 12){
-                 $('.ddd').text("Queen");
+                 $('.ddd').prepend('<img src="/img/q.png" />');
                  scoreAsDealer = scoreAsDealer + 10;
                  $('.scoreAsDealer').text(scoreAsDealer);
               }
               else if (firstDealerCard == 11){
-                 $('.ddd').text("Jack");
+                 $('.ddd').prepend('<img src="/img/j.png" />');
                  scoreAsDealer = scoreAsDealer + 10;
                  $('.scoreAsDealer').text(scoreAsDealer);
               }
               else if (firstDealerCard == 10){
-                 $('.ddd').text("Ten");
+                 $('.ddd').prepend('<img src="/img/10.png" />');
                  scoreAsDealer = scoreAsDealer + 10;
                  $('.scoreAsDealer').text(scoreAsDealer);
               }
               else if (firstDealerCard == 9){
-                 $('.ddd').text("Neuf");
+                 $('.ddd').prepend('<img src="/img/9.png" />');
                  scoreAsDealer = scoreAsDealer + 9;
                  $('.scoreAsDealer').text(scoreAsDealer);
               }
               else if (firstDealerCard == 8){
-                 $('.ddd').text("Eight");
+                 $('.ddd').prepend('<img src="/img/8.png" />');
                  scoreAsDealer = scoreAsDealer + 8;
                  $('.scoreAsDealer').text(scoreAsDealer);
               }
               else if (firstDealerCard == 7){
-                 $('.ddd').text("Seven");
+                 $('.ddd').prepend('<img src="/img/7.png" />');
                  scoreAsDealer = scoreAsDealer + 7;
                  $('.scoreAsDealer').text(scoreAsDealer);
               }
               else if (firstDealerCard == 6){
-                 $('.ddd').text("Six");
+                 $('.ddd').prepend('<img src="/img/6.png" />');
                  scoreAsDealer = scoreAsDealer + 6;
                  $('.scoreAsDealer').text(scoreAsDealer);
               }
               else if (firstDealerCard == 5){
-                 $('.ddd').text("Five");
+                 $('.ddd').prepend('<img src="/img/5.png" />');
                  scoreAsDealer = scoreAsDealer + 5;
                  $('.scoreAsDealer').text(scoreAsDealer);
               }
               else if (firstDealerCard == 4){
-                 $('.ddd').text("Four");
+                 $('.ddd').prepend('<img src="/img/4.png" />');
                  scoreAsDealer = scoreAsDealer + 4;
                  $('.scoreAsDealer').text(scoreAsDealer);
               }
               else if (firstDealerCard == 3){
-                 $('.ddd').text("Three");
+                 $('.ddd').prepend('<img src="/img/3.png" />');
                  scoreAsDealer = scoreAsDealer + 3;
                  $('.scoreAsDealer').text(scoreAsDealer);
               }
               else if (firstDealerCard == 2){
-                 $('.ddd').text("Two");
+                 $('.ddd').prepend('<img src="/img/2.png" />');
                  scoreAsDealer = scoreAsDealer + 2;
                  $('.scoreAsDealer').text(scoreAsDealer);
               }
@@ -247,72 +252,72 @@ if (Meteor.isClient) {
               if (secondDealerCard == 1){
                  
                  if (scoreAsDealer + 11 > 21) {
-                  $('.aaa').text('*');
+                  $('.aaa').prepend('<img src="/img/191.jpg" />');
                   scoreAsDealer = scoreAsDealer + 1;
                  }
                  else if (scoreAsDealer + 11 < 21) {
-                  $('.aaa').text('*');
+                  $('.aaa').prepend('<img src="/img/191.jpg" />');
                   scoreAsDealer = scoreAsDealer + 11;
                  }
                  $('.scoreAsDealer').text(scoreAsDealer);
               }
               else if (secondDealerCard == 13){
-                 $('.aaa').text('*');
+                 $('.aaa').prepend('<img src="/img/191.jpg" />');
                  scoreAsDealer = scoreAsDealer + 10;
                  $('.scoreAsDealer').text(scoreAsDealer);
               }
               else if (secondDealerCard == 12){
-                 $('.aaa').text('*');
+                 $('.aaa').prepend('<img src="/img/191.jpg" />');
                  scoreAsDealer = scoreAsDealer + 10;
                  $('.scoreAsDealer').text(scoreAsDealer);
               }
               else if (secondDealerCard == 11){
-                 $('.aaa').text('*');
+                 $('.aaa').prepend('<img src="/img/191.jpg" />');
                  scoreAsDealer = scoreAsDealer + 10;
                  $('.scoreAsDealer').text(scoreAsDealer);
               }
               else if (secondDealerCard == 10){
-                 $('.aaa').text('*');
+                 $('.aaa').prepend('<img src="/img/191.jpg" />');
                  scoreAsDealer = scoreAsDealer + 10;
                  $('.scoreAsDealer').text(scoreAsDealer);
               }
               else if (secondDealerCard == 9){
-                 $('.aaa').text('*');
+                 $('.aaa').prepend('<img src="/img/191.jpg" />');
                  scoreAsDealer = scoreAsDealer + 9;
                  $('.scoreAsDealer').text(scoreAsDealer);
               }
               else if (secondDealerCard == 8){
-                 $('.aaa').text('*');
+                 $('.aaa').prepend('<img src="/img/191.jpg" />');
                  scoreAsDealer = scoreAsDealer + 8;
                  $('.scoreAsDealer').text(scoreAsDealer);
               }
               else if (secondDealerCard == 7){
-                 $('.aaa').text('*');
+                 $('.aaa').prepend('<img src="/img/191.jpg" />');
                  scoreAsDealer = scoreAsDealer + 7;
                  $('.scoreAsDealer').text(scoreAsDealer);
               }
               else if (secondDealerCard == 6){
-                 $('.aaa').text('*');
+                 $('.aaa').prepend('<img src="/img/191.jpg" />');
                  scoreAsDealer = scoreAsDealer + 6;
                  $('.scoreAsDealer').text(scoreAsDealer);
               }
               else if (secondDealerCard == 5){
-                 $('.aaa').text('*');
+                 $('.aaa').prepend('<img src="/img/191.jpg" />');
                  scoreAsDealer = scoreAsDealer + 5;
                  $('.scoreAsDealer').text(scoreAsDealer);
               }
               else if (secondDealerCard == 4){
-                 $('.aaa').text('*');
+                 $('.aaa').prepend('<img src="/img/191.jpg" />');
                  scoreAsDealer = scoreAsDealer + 4;
                  $('.scoreAsDealer').text(scoreAsDealer);
               }
               else if (secondDealerCard == 3){
-                 $('.aaa').text('*');
+                 $('.aaa').prepend('<img src="/img/191.jpg" />');
                  scoreAsDealer = scoreAsDealer + 3;
                  $('.scoreAsDealer').text(scoreAsDealer);
               }
               else if (secondDealerCard == 2){
-                 $('.aaa').text('*');
+                 $('.aaa').prepend('<img src="/img/191.jpg" />');
                  scoreAsDealer = scoreAsDealer + 2;
                  $('.scoreAsDealer').text(scoreAsDealer);
               };
@@ -329,13 +334,12 @@ if (Meteor.isClient) {
               
               var newCard = Math.floor((Math.random() * (13-0)+1 ));
               $('.nnn').fadeIn('slow');
-              $('.nnn').text(newCard);
               $('.newCard').hide();
               $('.newnewCard').fadeIn('slow');
               
 
               if (newCard == 1){
-                 $('.nnn').text("As");
+                 $('.nnn').prepend('<img src="/img/a.png" />');
                  if (scoreAsPlayer + 11 > 21) {
                   scoreAsPlayer = scoreAsPlayer + 1;
                  }
@@ -345,62 +349,62 @@ if (Meteor.isClient) {
                  $('.scoreAsPlayer').text(scoreAsPlayer);
               }
               else if (newCard == 13){
-                 $('.nnn').text("King");
+                 $('.nnn').prepend('<img src="/img/k.png" />');
                  scoreAsPlayer = scoreAsPlayer + 10;
                  $('.scoreAsPlayer').text(scoreAsPlayer);
               }
               else if (newCard == 12){
-                 $('.nnn').text("Queen");
+                 $('.nnn').prepend('<img src="/img/q.png" />');
                  scoreAsPlayer = scoreAsPlayer + 10;
                  $('.scoreAsPlayer').text(scoreAsPlayer);
               }
               else if (newCard == 11){
-                 $('.nnn').text("Jack");
+                 $('.nnn').prepend('<img src="/img/j.png" />');
                  scoreAsPlayer = scoreAsPlayer + 10;
                  $('.scoreAsPlayer').text(scoreAsPlayer);
               }
               else if (newCard == 10){
-                 $('.nnn').text("Ten");
+                 $('.nnn').prepend('<img src="/img/10.png" />');
                  scoreAsPlayer = scoreAsPlayer + 10;
                  $('.scoreAsPlayer').text(scoreAsPlayer);
               }
               else if (newCard == 9){
-                 $('.nnn').text("Neuf");
+                 $('.nnn').prepend('<img src="/img/9.png" />');
                  scoreAsPlayer = scoreAsPlayer + 9;
                  $('.scoreAsPlayer').text(scoreAsPlayer);
               }
               else if (newCard == 8){
-                 $('.nnn').text("Eight");
+                 $('.nnn').prepend('<img src="/img/8.png" />');
                  scoreAsPlayer = scoreAsPlayer + 8;
                  $('.scoreAsPlayer').text(scoreAsPlayer);
               }
               else if (newCard == 7){
-                 $('.nnn').text("Seven");
+                 $('.nnn').prepend('<img src="/img/7.png" />');
                  scoreAsPlayer = scoreAsPlayer + 7;
                  $('.scoreAsPlayer').text(scoreAsPlayer);
               }
               else if (newCard == 6){
-                 $('.nnn').text("Six");
+                 $('.nnn').prepend('<img src="/img/6.png" />');
                  scoreAsPlayer = scoreAsPlayer + 6;
                  $('.scoreAsPlayer').text(scoreAsPlayer);
               }
               else if (newCard == 5){
-                 $('.nnn').text("Five");
+                 $('.nnn').prepend('<img src="/img/5.png" />');
                  scoreAsPlayer = scoreAsPlayer + 5;
                  $('.scoreAsPlayer').text(scoreAsPlayer);
               }
               else if (newCard == 4){
-                 $('.nnn').text("Four");
+                 $('.nnn').prepend('<img src="/img/4.png" />');
                  scoreAsPlayer = scoreAsPlayer + 4;
                  $('.scoreAsPlayer').text(scoreAsPlayer);
               }
               else if (newCard == 3){
-                 $('.nnn').text("Three");
+                 $('.nnn').prepend('<img src="/img/3.png" />');
                  scoreAsPlayer = scoreAsPlayer + 3;
                  $('.scoreAsPlayer').text(scoreAsPlayer);
               }
               else if (newCard == 2){
-                 $('.nnn').text("Two");
+                 $('.nnn').prepend('<img src="/img/2.png" />');
                  scoreAsPlayer = scoreAsPlayer + 2;
                  $('.scoreAsPlayer').text(scoreAsPlayer);
               }
@@ -425,11 +429,11 @@ if (Meteor.isClient) {
               $('.newnewCard').hide('slow');
               $('.newnewnewCard').fadeIn('slow');
               $('.bbb').fadeIn('slow');
-              $('.bbb').text(newnewCard);
+              
               
 
               if (newnewCard == 1){
-                 $('.bbb').text("As");
+                 $('.bbb').prepend('<img src="/img/a.png" />');
                  if (scoreAsPlayer + 11 > 21) {
                   scoreAsPlayer = scoreAsPlayer + 1;
                  }
@@ -439,62 +443,62 @@ if (Meteor.isClient) {
                  $('.scoreAsPlayer').text(scoreAsPlayer);
               }
               else if (newnewCard == 13){
-                 $('.bbb').text("King");
+                 $('.bbb').prepend('<img src="/img/k.png" />');
                  scoreAsPlayer = scoreAsPlayer + 10;
-                 $('.scoreAsPlayer').text(scoreAsPlayer);
+                 $('.scoreAsPlayer').prepend(scoreAsPlayer);
               }
               else if (newnewCard == 12){
-                 $('.bbb').text("Queen");
+                 $('.bbb').prepend('<img src="/img/q.png" />');
                  scoreAsPlayer = scoreAsPlayer + 10;
                  $('.scoreAsPlayer').text(scoreAsPlayer);
               }
               else if (newnewCard == 11){
-                 $('.bbb').text("Jack");
+                 $('.bbb').prepend('<img src="/img/j.png" />');
                  scoreAsPlayer = scoreAsPlayer + 10;
                  $('.scoreAsPlayer').text(scoreAsPlayer);
               }
               else if (newnewCard == 10){
-                 $('.bbb').text("Ten");
+                 $('.bbb').prepend('<img src="/img/10.png" />');
                  scoreAsPlayer = scoreAsPlayer + 10;
                  $('.scoreAsPlayer').text(scoreAsPlayer);
               }
               else if (newnewCard == 9){
-                 $('.bbb').text("Neuf");
+                 $('.bbb').prepend('<img src="/img/9.png" />');
                  scoreAsPlayer = scoreAsPlayer + 9;
                  $('.scoreAsPlayer').text(scoreAsPlayer);
               }
               else if (newnewCard == 8){
-                 $('.bbb').text("Eight");
+                 $('.bbb').prepend('<img src="/img/8.png" />');
                  scoreAsPlayer = scoreAsPlayer + 8;
                  $('.scoreAsPlayer').text(scoreAsPlayer);
               }
               else if (newnewCard == 7){
-                 $('.bbb').text("Seven");
+                 $('.bbb').prepend('<img src="/img/7.png" />');
                  scoreAsPlayer = scoreAsPlayer + 7;
                  $('.scoreAsPlayer').text(scoreAsPlayer);
               }
               else if (newnewCard == 6){
-                 $('.bbb').text("Six");
+                 $('.bbb').prepend('<img src="/img/6.png" />');
                  scoreAsPlayer = scoreAsPlayer + 6;
                  $('.scoreAsPlayer').text(scoreAsPlayer);
               }
               else if (newnewCard == 5){
-                 $('.bbb').text("Five");
+                 $('.bbb').prepend('<img src="/img/5.png" />');
                  scoreAsPlayer = scoreAsPlayer + 5;
                  $('.scoreAsPlayer').text(scoreAsPlayer);
               }
               else if (newnewCard == 4){
-                 $('.bbb').text("Four");
+                 $('.bbb').prepend('<img src="/img/4.png" />');
                  scoreAsPlayer = scoreAsPlayer + 4;
                  $('.scoreAsPlayer').text(scoreAsPlayer);
               }
               else if (newnewCard == 3){
-                 $('.bbb').text("Three");
+                 $('.bbb').prepend('<img src="/img/3.png" />');
                  scoreAsPlayer = scoreAsPlayer + 3;
                  $('.scoreAsPlayer').text(scoreAsPlayer);
               }
               else if (newnewCard == 2){
-                 $('.bbb').text("Two");
+                 $('.bbb').prepend('<img src="/img/2.png" />');
                  scoreAsPlayer = scoreAsPlayer + 2;
                  $('.scoreAsPlayer').text(scoreAsPlayer);
               }
@@ -516,11 +520,11 @@ if (Meteor.isClient) {
               
               var newnewnewCard = Math.floor((Math.random() * (13-0)+1 ));
               $('.jjj').fadeIn('slow');
-              $('.jjj').text(newnewnewCard);
+              
               
 
               if (newnewnewCard == 1){
-                 $('.jjj').text("As");
+                 $('.jjj').prepend('<img src="/img/a.png" />');
                  if (scoreAsPlayer + 11 > 21) {
                   scoreAsPlayer = scoreAsPlayer + 1;
                  }
@@ -530,62 +534,62 @@ if (Meteor.isClient) {
                  $('.scoreAsPlayer').text(scoreAsPlayer);
               }
               else if (newnewnewCard == 13){
-                 $('.jjj').text("King");
+                 $('.jjj').prepend('<img src="/img/k.png" />');
                  scoreAsPlayer = scoreAsPlayer + 10;
                  $('.scoreAsPlayer').text(scoreAsPlayer);
               }
               else if (newnewnewCard == 12){
-                 $('.jjj').text("Queen");
+                 $('.jjj').prepend('<img src="/img/q.png" />');
                  scoreAsPlayer = scoreAsPlayer + 10;
                  $('.scoreAsPlayer').text(scoreAsPlayer);
               }
               else if (newnewnewCard == 11){
-                 $('.jjj').text("Jack");
+                 $('.jjj').prepend('<img src="/img/j.png" />');
                  scoreAsPlayer = scoreAsPlayer + 10;
                  $('.scoreAsPlayer').text(scoreAsPlayer);
               }
               else if (newnewnewCard == 10){
-                 $('.jjj').text("Ten");
+                 $('.jjj').prepend('<img src="/img/10.png" />');
                  scoreAsPlayer = scoreAsPlayer + 10;
                  $('.scoreAsPlayer').text(scoreAsPlayer);
               }
               else if (newnewnewCard == 9){
-                 $('.jjj').text("Neuf");
+                 $('.jjj').prepend('<img src="/img/9.png" />');
                  scoreAsPlayer = scoreAsPlayer + 9;
                  $('.scoreAsPlayer').text(scoreAsPlayer);
               }
               else if (newnewnewCard == 8){
-                 $('.jjj').text("Eight");
+                 $('.jjj').prepend('<img src="/img/8.png" />');
                  scoreAsPlayer = scoreAsPlayer + 8;
                  $('.scoreAsPlayer').text(scoreAsPlayer);
               }
               else if (newnewnewCard == 7){
-                 $('.jjj').text("Seven");
+                 $('.jjj').prepend('<img src="/img/7.png" />');
                  scoreAsPlayer = scoreAsPlayer + 7;
                  $('.scoreAsPlayer').text(scoreAsPlayer);
               }
               else if (newnewnewCard == 6){
-                 $('.jjj').text("Six");
+                 $('.jjj').prepend('<img src="/img/6.png" />');
                  scoreAsPlayer = scoreAsPlayer + 6;
                  $('.scoreAsPlayer').text(scoreAsPlayer);
               }
               else if (newnewnewCard == 5){
-                 $('.jjj').text("Five");
+                 $('.jjj').prepend('<img src="/img/5.png" />');
                  scoreAsPlayer = scoreAsPlayer + 5;
                  $('.scoreAsPlayer').text(scoreAsPlayer);
               }
               else if (newnewnewCard == 4){
-                 $('.jjj').text("Four");
+                 $('.jjj').prepend('<img src="/img/4.png" />');
                  scoreAsPlayer = scoreAsPlayer + 4;
                  $('.scoreAsPlayer').text(scoreAsPlayer);
               }
               else if (newnewnewCard == 3){
-                 $('.jjj').text("Three");
+                 $('.jjj').prepend('<img src="/img/3.png" />');
                  scoreAsPlayer = scoreAsPlayer + 3;
                  $('.scoreAsPlayer').text(scoreAsPlayer);
               }
               else if (newnewnewCard == 2){
-                 $('.jjj').text("Two");
+                 $('.jjj').prepend('<img src="/img/2.png" />');
                  scoreAsPlayer = scoreAsPlayer + 2;
                  $('.scoreAsPlayer').text(scoreAsPlayer);
               }
@@ -599,16 +603,16 @@ if (Meteor.isClient) {
                 alert("Black Jack !!")
               }
           });
-      });
+      
 
           $('.omgCard').click(function() {
               
               var omgCard = Math.floor((Math.random() * (13-0)+1 ));
               $('.kkk').fadeIn('slow');
-              $('.kkk').text(omgCard);
+              
 
               if (omgCard == 1){
-                 $('.kkk').text("As");
+                 $('.kkk').prepend('<img src="/img/a.png" />');
                  if (scoreAsPlayer + 11 > 21) {
                   scoreAsPlayer = scoreAsPlayer + 1;
                  }
@@ -618,62 +622,62 @@ if (Meteor.isClient) {
                  $('.scoreAsPlayer').text(scoreAsPlayer);
               }
               else if (omgCard == 13){
-                 $('.kkk').text("King");
+                 $('.kkk').prepend('<img src="/img/k.png" />');
                  scoreAsPlayer = scoreAsPlayer + 10;
                  $('.scoreAsPlayer').text(scoreAsPlayer);
               }
               else if (omgCard == 12){
-                 $('.kkk').text("Queen");
+                 $('.kkk').prepend('<img src="/img/q.png" />');
                  scoreAsPlayer = scoreAsPlayer + 10;
                  $('.scoreAsPlayer').text(scoreAsPlayer);
               }
               else if (omgCard == 11){
-                 $('.kkk').text("Jack");
+                 $('.kkk').prepend('<img src="/img/j.png" />');
                  scoreAsPlayer = scoreAsPlayer + 10;
                  $('.scoreAsPlayer').text(scoreAsPlayer);
               }
               else if (omgCard == 10){
-                 $('.kkk').text("Ten");
+                 $('.kkk').prepend('<img src="/img/10.png" />');
                  scoreAsPlayer = scoreAsPlayer + 10;
                  $('.scoreAsPlayer').text(scoreAsPlayer);
               }
               else if (omgCard == 9){
-                 $('.kkk').text("Neuf");
+                 $('.kkk').prepend('<img src="/img/9.png" />');
                  scoreAsPlayer = scoreAsPlayer + 9;
                  $('.scoreAsPlayer').text(scoreAsPlayer);
               }
               else if (omgCard == 8){
-                 $('.kkk').text("Eight");
+                 $('.kkk').prepend('<img src="/img/8.png" />');
                  scoreAsPlayer = scoreAsPlayer + 8;
                  $('.scoreAsPlayer').text(scoreAsPlayer);
               }
               else if (omgCard == 7){
-                 $('.kkk').text("Seven");
+                 $('.kkk').prepend('<img src="/img/7.png" />');
                  scoreAsPlayer = scoreAsPlayer + 7;
                  $('.scoreAsPlayer').text(scoreAsPlayer);
               }
               else if (omgCard == 6){
-                 $('.kkk').text("Six");
+                 $('.kkk').prepend('<img src="/img/6.png" />');
                  scoreAsPlayer = scoreAsPlayer + 6;
                  $('.scoreAsPlayer').text(scoreAsPlayer);
               }
               else if (omgCard == 5){
-                 $('.kkk').text("Five");
+                 $('.kkk').prepend('<img src="/img/5.png" />');
                  scoreAsPlayer = scoreAsPlayer + 5;
                  $('.scoreAsPlayer').text(scoreAsPlayer);
               }
               else if (omgCard == 4){
-                 $('.kkk').text("Four");
+                 $('.kkk').prepend('<img src="/img/4.png" />');
                  scoreAsPlayer = scoreAsPlayer + 4;
                  $('.scoreAsPlayer').text(scoreAsPlayer);
               }
               else if (omgCard == 3){
-                 $('.kkk').text("Three");
+                 $('.kkk').prepend('<img src="/img/3.png" />');
                  scoreAsPlayer = scoreAsPlayer + 3;
                  $('.scoreAsPlayer').text(scoreAsPlayer);
               }
               else if (omgCard == 2){
-                 $('.kkk').text("Two");
+                 $('.kkk').prepend('<img src="/img/2.png" />');
                  scoreAsPlayer = scoreAsPlayer + 2;
                  $('.scoreAsPlayer').text(scoreAsPlayer);
               }
@@ -689,10 +693,160 @@ if (Meteor.isClient) {
           });
 
           $('.stop').click(function() {
-            if (scoreAsDealer < scoreAsPlayer) {
+              
 
-            };
+              $('.stop').hide();
+              if (secondDealerCard == 1){
+                 $('.aaa').prepend('<img src="/img/a.png" />');
+                 if (scoreAsDealer + 11 > 21) {
+                  scoreAsDealer = scoreAsDealer + 1;
+                 }
+                 else if (scoreAsDealer + 11 < 21) {
+                  scoreAsDealer = scoreAsDealer + 11;
+                 }
+                 $('.scoreAsDealer').text(scoreAsDealer);
+              }
+              if (secondDealerCard == 13){
+                 $('.aaa').prepend('<img src="/img/k.png" />');
+                 scoreAsDealer = scoreAsDealer + 10;
+                 $('.scoreAsDealer').text(scoreAsDealer);
+              }
+              else if (secondDealerCard == 12){
+                 $('.aaa').prepend('<img src="/img/q.png" />');
+                 scoreAsDealer = scoreAsDealer + 10;
+                 $('.scoreAsDealer').text(scoreAsDealer);
+              }
+              else if (secondDealerCard == 11){
+                 $('.aaa').prepend('<img src="/img/j.png" />');
+                 scoreAsDealer = scoreAsDealer + 10;
+                 $('.scoreAsDealer').text(scoreAsDealer);
+              }
+              else if (secondDealerCard == 10){
+                 $('.aaa').prepend('<img src="/img/10.png" />');
+                 scoreAsDealer = scoreAsDealer + 10;
+                 $('.scoreAsDealer').text(scoreAsDealer);
+              }
+              else if (secondDealerCard == 9){
+                 $('.aaa').prepend('<img src="/img/9.png" />');
+                 scoreAsDealer = scoreAsDealer + 9;
+                 $('.scoreAsDealer').text(scoreAsDealer);
+              }
+              else if (secondDealerCard == 8){
+                 $('.aaa').prepend('<img src="/img/8.png" />');
+                 scoreAsDealer = scoreAsDealer + 8;
+                 $('.scoreAsDealer').text(scoreAsDealer);
+              }
+              else if (secondDealerCard == 7){
+                 $('.aaa').prepend('<img src="/img/7.png" />');
+                 scoreAsDealer = scoreAsDealer + 7;
+                 $('.scoreAsDealer').text(scoreAsDealer);
+              }
+              else if (secondDealerCard == 6){
+                 $('.aaa').prepend('<img src="/img/6.png" />');
+                 scoreAsDealer = scoreAsDealer + 6;
+                 $('.scoreAsDealer').text(scoreAsDealer);
+              }
+              else if (secondDealerCard == 5){
+                 $('.aaa').prepend('<img src="/img/5.png" />');
+                 scoreAsDealer = scoreAsDealer + 5;
+                 $('.scoreAsDealer').text(scoreAsDealer);
+              }
+              else if (secondDealerCard == 4){
+                 $('.aaa').prepend('<img src="/img/4.png" />');
+                 scoreAsDealer = scoreAsDealer + 4;
+                 $('.scoreAsDealer').text(scoreAsDealer);
+              }
+              else if (secondDealerCard == 3){
+                 $('.aaa').prepend('<img src="/img/3.png" />');
+                 scoreAsDealer = scoreAsDealer + 3;
+                 $('.scoreAsDealer').text(scoreAsDealer);
+              }
+              else if (secondDealerCard == 2){
+                 $('.aaa').prepend('<img src="/img/2.png" />');
+                 scoreAsDealer = scoreAsDealer + 2;
+                 $('.scoreAsDealer').text(scoreAsDealer);
+              }
+
+
+              while (scoreAsDealer < scoreAsPlayer) {
+                var newDealerCard = Math.floor((Math.random() * (13-0)+1 ));
+                $('.ppp').fadeIn('slow');
+                if (newDealerCard == 1){
+                   
+                   if (scoreAsDealer + 11 > 21) {
+                      $('.ppp').prepend('<img src="/img/191.jpg" />');
+                      scoreAsDealer = scoreAsDealer + 1;
+                   }
+                    else if (scoreAsDealer + 11 < 21) {
+                       $('.ppp').prepend('<img src="/img/191.jpg" />');
+                      scoreAsDealer = scoreAsDealer + 11;
+                    }
+                       $('.scoreAsDealer').text(scoreAsDealer);
+                    }
+                    else if (newDealerCard == 13){
+                       $('.ppp').prepend('<img src="/img/191.jpg" />');
+                       scoreAsDealer = scoreAsDealer + 10;
+                       $('.scoreAsDealer').text(scoreAsDealer);
+                    }
+                    else if (newDealerCard == 12){
+                       $('.ppp').prepend('<img src="/img/191.jpg" />');
+                       scoreAsDealer = scoreAsDealer + 10;
+                       $('.scoreAsDealer').text(scoreAsDealer);
+                    }
+                    else if (newDealerCard == 11){
+                       $('.ppp').prepend('<img src="/img/191.jpg" />');
+                       scoreAsDealer = scoreAsDealer + 10;
+                       $('.scoreAsDealer').text(scoreAsDealer);
+                    }
+                    else if (newDealerCard == 10){
+                       $('.ppp').prepend('<img src="/img/191.jpg" />');
+                       scoreAsDealer = scoreAsDealer + 10;
+                       $('.scoreAsDealer').text(scoreAsDealer);
+                    }
+                    else if (newDealerCard == 9){
+                       $('.ppp').prepend('<img src="/img/191.jpg" />');
+                       scoreAsDealer = scoreAsDealer + 9;
+                       $('.scoreAsDealer').text(scoreAsDealer);
+                    }
+                    else if (newDealerCard == 8){
+                       $('.ppp').prepend('<img src="/img/191.jpg" />');
+                       scoreAsDealer = scoreAsDealer + 8;
+                       $('.scoreAsDealer').text(scoreAsDealer);
+                    }
+                    else if (newDealerCard == 7){
+                       $('.ppp').prepend('<img src="/img/191.jpg" />');
+                       scoreAsDealer = scoreAsDealer + 7;
+                       $('.scoreAsDealer').text(scoreAsDealer);
+                    }
+                    else if (newDealerCard == 6){
+                       $('.ppp').prepend('<img src="/img/191.jpg" />');
+                       scoreAsDealer = scoreAsDealer + 6;
+                       $('.scoreAsDealer').text(scoreAsDealer);
+                    }
+                    else if (newDealerCard == 5){
+                       $('.ppp').prepend('<img src="/img/191.jpg" />');
+                       scoreAsDealer = scoreAsDealer + 5;
+                       $('.scoreAsDealer').text(scoreAsDealer);
+                    }
+                    else if (newDealerCard == 4){
+                       $('.ppp').prepend('<img src="/img/191.jpg" />');
+                       scoreAsDealer = scoreAsDealer + 4;
+                       $('.scoreAsDealer').text(scoreAsDealer);
+                    }
+                    else if (newDealerCard == 3){
+                       $('.ppp').prepend('<img src="/img/191.jpg" />');
+                       scoreAsDealer = scoreAsDealer + 3;
+                       $('.scoreAsDealer').text(scoreAsDealer);
+                    }
+                    else if (newDealerCard == 2){
+                       $('.ppp').prepend('<img src="/img/191.jpg" />');
+                       scoreAsDealer = scoreAsDealer + 2;
+                       $('.scoreAsDealer').text(scoreAsDealer);
+                    };
+
+                  };
           })
+      });
 }
 
 if (Meteor.isServer) {
