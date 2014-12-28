@@ -18,6 +18,26 @@ body {
 	margin-top: 20%;
 }
 
+#win {
+
+	font-family: Gun;
+	position: absolute;
+	font-size: 80px;
+	color: white;
+	margin-left: 24.5%;
+	margin-top: 25%;
+
+}
+
+#loose {
+	font-family: Gun;
+	position: absolute;
+	font-size: 80px;
+	color: white;
+	margin-left:17.5%;
+	margin-top: 20%;
+}
+
 .ddd, .aaa {
 	display: inline-block;
 	background-color: #F7F7F7;
@@ -43,18 +63,20 @@ body {
 }
 
 .lll {
-	display: inline-block;
+	position:  absolute;
+	display: block;
 	background-color: #F7F7F7;
 	height: 110px;
 	width: 80px;
 	border-style: outset;
 	border-color: red;
 	border-radius: 10px;
-	margin-top: 1%;
+	margin-top: -7%;
+	margin-left: 48%;
 }
 
 .ppp {
-display: inline-block;
+	display: inline-block;
 	background-color: #F7F7F7;
 	height: 110px;
 	width: 80px;
@@ -197,6 +219,29 @@ display: inline-block;
 	border-style: outset;
 }
 
+.recave {
+	position: absolute;
+	margin-left: 18.5%;
+	margin-top: 10%;
+}
+
+#jetonsAsPlayer {
+
+	border-color: red;
+	font-size: 25px;
+	text-align: center;
+	padding-top: 20px;
+	height: 40px;
+	width: 100px;
+	margin-top: -15%;
+	margin-right: 70%;
+	margin-left: 20%;
+	display: block;
+	background-color: white;
+	border-radius: 30px;
+	border-style: outset;
+}
+
 .container {
 	height: 575px;
 	border-radius: 400px;
@@ -228,3 +273,9 @@ img {
 	margin-left: 48.5%;	
 }
 
+.mise {
+	position: absolute;
+	margin-left: 39%;
+	margin-top: -1%;
+	width: 5%;
+}

@@ -3,10 +3,16 @@
 </head>
 
 <body>
-  
+
+{{> loginButtons}}
+
   <div id="blackjack"> = Black Jack = </div>
+  <div id="win"> = You Win = </div>
+  <div id="loose"> = You Loose = </div>
+  <button class="newGame"> New Game </button>
   <div class="container">
     <div id="wess">
+    
       <div class="scoreAsDealer">  </div>
       <div class="col-xs-12">
         <div class="ddd"> <img id="yo" src="/img/191.jpg"/></div>
@@ -16,8 +22,7 @@
         <div class="ppp">  </div>
       </div>
 
-      <div class="row">
-        
+      
           <button class="baobab"> Deal ! </button>
           <button class="newCard"> One more Card ! </button>
           <button class="newnewCard"> Again ! </button>
@@ -25,7 +30,7 @@
           <button class="omgCard"> Really?! </button>
           <button class="stop"> Done </button>
         
-      </div>
+      
 
       <div class="col-xs-12">
         
@@ -38,10 +43,12 @@
         
       </div>
       
+      <div id="jetonsAsPlayer">  </div>
       <div class="scoreAsPlayer">  </div>
+      <button class="mise"> 50$ </button>
+      <button class="recave"> Recave </button>
     </div>
   </div>
-
 
 </body>
 
